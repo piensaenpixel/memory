@@ -1,0 +1,5 @@
+{% if jekyll.environment == "production" %}
+<script src="{{ "/javascripts/main.min.js" | prepend: site.baseurl }}"></script>
+{% else %}
+<script src="{{ "/javascripts/main.js" | prepend: site.baseurl }}"></script>
+{% endif %}

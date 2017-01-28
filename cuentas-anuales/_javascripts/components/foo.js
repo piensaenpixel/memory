@@ -7,7 +7,7 @@ module.exports = {
         $('.content-dropdown').toggleClass('is-open');
       });
 
-      $('table').tableHover({colClass: 'hover'});
+      $('table').tableHover({colClass: 'hover', ignoreCols: [1]});
 
     })
 

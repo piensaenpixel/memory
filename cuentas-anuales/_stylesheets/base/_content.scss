@@ -47,6 +47,49 @@
     margin-bottom: 32px;
     margin-left: 36px;
   }
+
+  table {
+    border: 2px solid $tableborder;
+    width: 100%;
+  }
+
+  td {
+    border-left: 2px solid $tableborder;
+    color: $txtgrey;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 15px 20px;
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    &:last-child {
+      text-align: center;
+    }
+  }
+
+  th {
+    border-bottom: 2px solid $tableborder;
+    border-left: 2px solid $tableborder;
+    color: $dark;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 25px 20px;
+    text-align: center;
+
+    &:first-child {
+      border-left: 0;
+      text-align: left;
+    }
+  }
+
+  .hover {
+    @include transition(background, 300ms);
+    background: $lightgrey;
+  }
+
+
 }
 
 .content-info {

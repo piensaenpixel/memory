@@ -60,3 +60,37 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+
+
+<table>
+  <tr>
+    <th>ACTIVO</th>
+    <th>2015</th>
+    <th>2014*A</th>
+    <th>2013*</th>
+    <th>NOTAS</th>
+  </tr>
+  <tr>
+    <td>CAJAS Y DEPÓSITOS EN BANCOS CENTRALES</td>
+    <td>43.467</td>
+    <td>43.467</td>
+    <td>43.467</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>CARTERA DE NEGOCIACIÓN</td>
+    <td>78.326</td>
+    <td>78.326</td>
+    <td>78.326</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Depósitos en entidades de crédito</td>
+    <td>65</td>
+    <td>65</td>
+    <td>65</td>
+    <td></td>
+  </tr>
+</table>
+
+

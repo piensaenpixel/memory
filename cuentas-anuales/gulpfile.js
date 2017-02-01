@@ -74,11 +74,11 @@ gulp.task('serve', () => {
 
 gulp.task('build:reload', ['build'], () => { reload(); });
 gulp.task('build', done => {
-  return child.spawn('jekyll', ['build', '--drafts'], {stdio: 'inherit'}).on('close', done);
+  return child.spawn('bundle', ['exec', 'jekyll', 'build', '--drafts'], {stdio: 'inherit'}).on('close', done);
 });
 
 gulp.task('jekyll', () => {
-  const jekyll = child.spawn('jekyll', ['build',
+  const jekyll = child.spawn('bundle', ['exec', 'jekyll', 'build',
     '--incremental',
     '--drafts'
   ]);

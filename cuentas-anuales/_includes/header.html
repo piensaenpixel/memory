@@ -1,14 +1,25 @@
+{% assign lang = site.active_lang %}
 <header class="header">
 
   <div class="container">
 
     <nav class="options">
       <ul class="options-list">
-        {% for options in site.data.menu.options %}
+        {% for options in site.data.header.options %}
           <li class="options-listitem">
-            <a href="#">
+          {% if forloop.index == 1 %}
+            {% for language in site.languages %}
+              {% if language != lang %}
+                <a href="{% if language == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{language}}{{page.url}} {% endif %}">
+                  {{ site.data[lang].header.options[0].title }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            <a href="{{ options.url }}">
               {{ options.title }}
             </a>
+          {% endif %}
           </li>
         {% endfor %}
       </ul>
@@ -24,7 +35,7 @@
         </g>
       </svg>
       <h1 class="header-title">
-        cuentas anuales
+        {{ site.data.header.title }}
       </h1>
     </div>
 

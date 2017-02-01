@@ -70,7 +70,7 @@ gulp.task('serve', () => {
   gulp.watch(cssFiles, ['css']);
   gulp.watch(jsFiles, ['js']);
   gulp.watch(assetsFiles, ['assets']);
-  gulp.watch(['*.md', '*.html', '_layouts/**/*', '_includes/**/*', '_posts/**/*'], ['build:reload']);
+  gulp.watch(['*.md', '_layouts/**/*', '_includes/**/*', '_data/**/*'], ['build:reload']);
 });
 
 gulp.task('build:reload', ['build'], () => { reload(); });

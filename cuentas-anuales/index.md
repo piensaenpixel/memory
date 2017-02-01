@@ -8,6 +8,7 @@ lang: site.data["active_lang"]
 <div class="content-info">
   <div class="content-dropdown">
     <ul class="content-dropdownlist">
+      {{lang}}
       {% for item in site.data.home.summary %}
         <li class="content-dropdownitem">
           <a href="#content{{ forloop.index }}">{{ item }}</a>

@@ -1,21 +1,18 @@
 ---
 layout: default
+lang: site.data["active_lang"]
 ---
 
-# Notas de estados financieros consolidados adjuntos
+# {{ site.data.home.title }}
 
 <div class="content-info">
   <div class="content-dropdown">
     <ul class="content-dropdownlist">
-      <li class="content-dropdownitem">
-        <a href="#">1. Introducción, bases de presentación de las cuentas anuales consolidadas, control interno de la formación financiera y otra información</a>
-      </li>
-      <li class="content-dropdownitem">
-        <a href="#">2. Introducción, bases de presentación de las cuentas anuales consolidadas</a>
-      </li>
-      <li class="content-dropdownitem">
-        <a href="#">3. Introducción, bases de presentación de las cuentas anuales consolidadas</a>
-      </li>
+      {% for item in site.data.home.summary %}
+        <li class="content-dropdownitem">
+          <a href="#content{{ forloop.index }}">{{ item }}</a>
+        </li>
+      {% endfor %}
     </ul>
     <span class="content-dropdownlink js-dropdown">
       <svg width="12px" height="8px" viewBox="6022 -477 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

@@ -24,11 +24,18 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Language settings
+languages: ["es", "en"]
+default_lang: "es"
+exclude_from_localization: ["javascript", "assets", "stylesheets"]
+parallel_localization: true
+
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-polyglot
 exclude:
   - Gemfile
   - Gemfile.lock

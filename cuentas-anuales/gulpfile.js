@@ -34,6 +34,7 @@ gulp.task('css', () => {
     .pipe(sourcemaps.write())
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(gulp.dest('_site/stylesheets'))
+    .pipe(gulp.dest('stylesheets'))
     .pipe(reload({
       stream: true
     }))
@@ -41,8 +42,7 @@ gulp.task('css', () => {
       keepBreaks: false,
       keepSpecialComments: true
     }))
-    .pipe(rename({extname: '.min.css'}))
-    .pipe(gulp.dest('_site/stylesheets'));
+    .pipe(gulp.dest('stylesheets'));
 });
 
 gulp.task('js', () => {
@@ -54,8 +54,7 @@ gulp.task('js', () => {
     .pipe(reload({stream: true}))
     .pipe(uglify())
     .on('error', swallowError)
-    .pipe(rename({extname: '.min.js'}))
-    .pipe(gulp.dest('_site/javascripts'));
+    .pipe(gulp.dest('javascripts'));
 });
 
 gulp.task('serve', () => {
